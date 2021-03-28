@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>게시글 입력</title>
+	<link rel="stylesheet" type="text/css" href="/style/style.css">
+</head>
+<body>
+	<!--
+	create table t_drink(
+		Index int(11) not null autoincrement primarykey,	
+		name varchar(100) not null,
+		type char(1) not null,
+		price int(11),
+		alchol double not null,
+		contry char(1),
+		size int(11),
+		bottle char(1),
+		etc text
+	);
+	 -->
+	<div class="wrap">
+		<div class="tbType01">
+			<table>
+				<caption>게시판 입력 테이블</caption>
+				<colgroup>
+					<col style="width:120px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th><label for="name">술이름</label></th>
+						<td><input type="text" id="name" name="name"></td>
+					</tr>
+					<tr>
+						<th><label for="type">분류</label></th>
+						<td>
+							<select id="type" name="type">
+								<option value="1">소주</option>
+								<option value="2">맥주</option>
+								<option value="3">양주</option>
+								<option value="4">막걸리</option>
+								<option value="5">와인</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="price">가격</label></th>
+						<td><input type="text" id="price" name="price"></td>
+					</tr>
+					<tr>
+						<th><label for="alchol">도수</label></th>
+						<td><input type="text" id="alchol" name="alchol"></td>
+					</tr>
+					<tr>
+						<th><label for="contry">제조국</label></th>
+						<td>
+							<select id="contry" name="contry">
+								<option value="">선택안함</option>
+								<option value="kr">한국</option>
+								<option value="us">미국</option>
+								<option value="jp">일본</option>
+								<option value="cn">중국</option>
+								<option value="de">독일</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="size">용량</label></th>
+						<td><input type="text" id="size" name="size"></td>
+					</tr>
+					<tr>
+						<th><label for="bottle">용기</label></th>
+						<td>
+							<select id="bottle" name="bottle">
+								<option value="c">캔</option>
+								<option value="b">병</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="etc">기타</label></th>
+						<td><textarea cols="50" rows="10" id="etc" name="etc"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="btnL">
+			<input type="submit" value="등록" class="btn type2">
+			<input type="reset" value="초기화" class="btn">
+		</div>
+	</div>
+</body>
+</html>
